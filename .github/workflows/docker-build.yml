@@ -35,4 +35,4 @@ jobs:
           # only push image when we merge PRs or push to main branch
           push: ${{ github.event_name != 'pull_request' }}
           # hardcoded for a single name/tags
-          tags: ghcr.io/course-testing-org/github-actions-templates:simple
+          tags: ghcr.io/course-testing-org/wordsmith-web:latest
