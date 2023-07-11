@@ -1,3 +1,4 @@
+---
 ## Super Linter GitHub Actions ##
 name: Lint Code Base
 # Start the job on all push #

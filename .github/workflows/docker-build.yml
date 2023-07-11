@@ -1,3 +1,4 @@
+---
 name: Docker Build - Full
 # complete workflow with intelligent, automated tags and labels
 # images stored in ghcr.io
