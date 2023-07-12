@@ -7,6 +7,6 @@ on:
 jobs:
  scan:
    name: Scan
-   uses: course-testing-org/actions/.github/workflows/reusable-trivy.yml@aerinkayne-patch-1
+   uses: course-testing-org/actions/.github/workflows/reusable-trivy.yml@main
    with:
     image: 'ghcr.io/course-testing-org/wordsmith-web:latest'
