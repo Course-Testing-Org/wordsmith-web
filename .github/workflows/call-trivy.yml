@@ -1,0 +1,10 @@
+---
+name: Call Trivy
+on:
+ push:
+   branches: [main]
+ pull_request:
+jobs:
+ scan:
+   name: Scan
+   uses: course-testing-org/actions/.github/workflows/reusable-trivy.yml@aerinkayne-patch-1
