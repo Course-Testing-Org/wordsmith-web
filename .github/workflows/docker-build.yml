@@ -1,6 +1,6 @@
 ---
 name: Docker Build - Full
-# complete workflow with intelligent, automated tags and labels
+# complete workflow with intelligent, automated tags and labels!
 # images stored in ghcr.io
 # GitHub cache enabled for layers
 # Multi-arch builds for amd64 and arm64 enabled
