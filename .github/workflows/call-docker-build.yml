@@ -28,6 +28,8 @@ jobs:
 
     # FIXME: fork this repo and update this path to YOUR reusable workflow location
     uses: course-testing-org/actions/.github/workflows/reusable-docker-build.yml@main
+    with:
+      test-input: 'This is a test value'
 
     # set permissions here to be equal or greater than what's required in the Reusable Workflow
     # Permisions set here for the GITHUB_TOKEN are then passed to the Reusable Workflow
@@ -73,3 +75,10 @@ jobs:
       # platforms: linux/amd64
       
       # comment-enable: true
+  test-reusable-output:
+    needs: call-docker-build
+    runs-on: ubuntu-latest
+    steps:
+      - name: test output
+        run: |
+          echo "${{ needs.call-docker-build.outputs.test-output }}"
